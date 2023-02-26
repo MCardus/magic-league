@@ -21,31 +21,13 @@ class LeagueTableRow extends Component {
         <TdPosName style={{ width: "2em" }}>
           {position}
         </TdPosName>
-        <TdPosName style={{ textAlign: "left", width: "15em" }}>
-          {teamMapping[name]}
+        <TdPosName style={{ textAlign: "left", width: "25em" }}>
+          {name}
         </TdPosName>
-        <TdNumber style={{ borderLeft: 0 }}>
-          {won + drawn + lost}
+        <TdNumber style={{ width: "4em" }}>
+          X
         </TdNumber>
-        <TdNumber>
-          {won}
-        </TdNumber>
-        <TdNumber>
-          {drawn}
-        </TdNumber>
-        <TdNumber>
-          {lost}
-        </TdNumber>
-        <TdNumber>
-          {goalFor}
-        </TdNumber>
-        <TdNumber>
-          {goalAgainst}
-        </TdNumber>
-        <TdNumber>
-          {goalFor - goalAgainst}
-        </TdNumber>
-        <TdNumber>
+        <TdNumber style={{ width: "4em" }}>
           {point}
         </TdNumber>
       </Tr>
