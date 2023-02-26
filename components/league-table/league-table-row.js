@@ -60,8 +60,8 @@ const Tr = styled.div`
   flex-direction: row;
   background-color: ${({ position }) =>
     position === 1
-      ? "#FF0047"
-      : position < 5 ? "#E10040" : position > 17 ? "#8A0036" : "#AB0039"};
+      ? "#453F78"
+      : position < 5 ? "#3F2E56" : position > 17 ? "#3F2E56" : "#3F2E56"};
 `
 const TdPosName = styled.div`
   padding: .5em;

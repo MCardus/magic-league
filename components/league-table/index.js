@@ -18,7 +18,7 @@ class LeagueTable extends Component {
   constructor() {
     super()
     this.state = {
-      round: 38
+      round: 1
     }
   }
 
@@ -30,7 +30,7 @@ class LeagueTable extends Component {
     let teams = {}
     for (let i = 0; i < this.state.round; i++) {
       const round = json[i]
-      round.forEach(function(match) {
+      round.forEach(function (match) {
         const team1 = match.substring(0, 3)
         const score1 = match.substring(3, 4) * 1 // performant string to number conversion
         const score2 = match.substring(5, 6) * 1
@@ -104,19 +104,13 @@ const Table = styled.div`
 `
 const TableHeader = () =>
   <div style={{ display: "flex", flexDirection: "row-reverse" }}>
-    <Th>Pl</Th>
-    <Th>W</Th>
-    <Th>D</Th>
-    <Th>L</Th>
-    <Th>GF</Th>
-    <Th>GA</Th>
-    <Th>GD</Th>
-    <Th>Pts</Th>
+    <Th>Partides</Th>
+    <Th>Punts</Th>
   </div>
 
 const Th = styled.div`
-  width: 2em;
-  padding: .5em;
+  width: 4em;
+  padding: 0.5em;
   border: solid #360037 1px;
   border-right: 0;
   font-weight: 400;

@@ -8,16 +8,14 @@ export default () =>
   <MainWrapper>
     <TableWrapper>
       <Title>
-        Premier{" "}
         <EPLLogo
           style={{
-            width: "1.5em",
+            width: "7em",
             position: "relative",
-            top: ".5em",
+            top: "1em",
             margin: "0 .1em"
           }}
         />{" "}
-        League
       </Title>
       <div>
         <LeagueTable />
@@ -32,7 +30,7 @@ const Title = styled.h1`
 
 const TableWrapper = styled.div`
   text-align: center;
-  background-color: #360037;
+  background-color: #401F3E;
   color: white;
   border-radius: 3px;
 `
