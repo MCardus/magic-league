@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import dataJson from "../../data/en.1.json"
+import dataJson from "../../data/games.json"
 import styled from "styled-components"
 import LeagueTableRow from "./league-table-row"
 import FlipMove from "react-flip-move"
@@ -14,7 +14,7 @@ class LeagueTable extends Component {
   constructor() {
     super()
     this.state = {
-      round: 1
+      round: 2
     }
   }
 

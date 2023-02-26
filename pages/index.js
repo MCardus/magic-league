@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Link from "next/link"
 import LeagueTable from "../components/league-table/index"
-import EPLLogo from "../components/logo/epl-logo"
+import EPLLogo from "../components/logo/magic-logo"
 
 export default () =>
   <MainWrapper>

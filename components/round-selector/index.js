@@ -5,7 +5,7 @@ class RoundSelector extends Component {
   constructor() {
     super()
     this.state = {
-      activeRound: 38
+      activeRound: 2
     }
   }
 
@@ -31,10 +31,7 @@ class RoundSelector extends Component {
     return (
       <div style={{ margin: "2em 0 1em" }}>
         <div style={{ marginBottom: ".5em" }}>
-          {this.renderRounds(1, 19)}
-        </div>
-        <div>
-          {this.renderRounds(20, 38)}
+          {this.renderRounds(1, 2)}
         </div>
       </div>
     )
