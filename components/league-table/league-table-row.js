@@ -7,7 +7,8 @@ class LeagueTableRow extends Component {
     const {
       position,
       name,
-      point
+      points,
+      games
     } = this.props
     return (
       <Tr position={position}>
@@ -18,10 +19,10 @@ class LeagueTableRow extends Component {
           {name}
         </TdPosName>
         <TdNumber style={{ width: "4em" }}>
-          X
+          {points}
         </TdNumber>
         <TdNumber style={{ width: "4em" }}>
-          {point}
+          {games}
         </TdNumber>
       </Tr>
     )

@@ -6,7 +6,8 @@ import FlipMove from "react-flip-move"
 import RoundSelector from "../round-selector/index"
 
 const newTeam = {
-  point: 0
+  points: 0,
+  games: 0,
 }
 
 class LeagueTable extends Component {
@@ -25,13 +26,14 @@ class LeagueTable extends Component {
     let teams = {}
     for (let i = 0; i < this.state.round; i++) {
       const round = json[i]
-      round.forEach(function (match) {
+      round.forEach(function (match, index) {
         const player = match
-        const score = 1
+        const score = round.length - index
         if (!teams[player]) {
           teams[player] = Object.assign({}, newTeam)
         }
-        teams[player].point += score
+        teams[player].points += score
+        teams[player].games += 1
       }, this)
     }
     const sortedTeams = Object.entries(teams).sort((playerA, playerB) => {
@@ -43,12 +45,12 @@ class LeagueTable extends Component {
         return -1
       }
     })
-    return sortedTeams.map((team, index) =>
+    return sortedTeams.map((player, index) =>
       <LeagueTableRow
-        {...team[1]}
-        key={team[0]}
+        {...player[1]}
+        key={player[0]}
         position={index + 1}
-        name={team[0]}
+        name={player[0]}
       />
     )
   }
