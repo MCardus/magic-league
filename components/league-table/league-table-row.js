@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-import teamMapping from "../../data/team-mapping.json"
 import styled from "styled-components"
 
 // This needs to be a stateful component to work with react-flip-move
@@ -8,12 +7,6 @@ class LeagueTableRow extends Component {
     const {
       position,
       name,
-      played,
-      won,
-      drawn,
-      lost,
-      goalFor,
-      goalAgainst,
       point
     } = this.props
     return (
