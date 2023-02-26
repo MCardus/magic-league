@@ -14,7 +14,7 @@ class LeagueTable extends Component {
   constructor() {
     super()
     this.state = {
-      round: 2
+      round: 4
     }
   }
 
@@ -37,9 +37,9 @@ class LeagueTable extends Component {
       }, this)
     }
     const sortedTeams = Object.entries(teams).sort((playerA, playerB) => {
-      if (playerA[1].point > playerB[1].point) {
+      if (playerA[1].points > playerB[1].points) {
         return -1
-      } else if (playerA[1].point < playerB[1].point) {
+      } else if (playerA[1].points < playerB[1].points) {
         return 1
       } else {
         return -1
