@@ -1,3 +1,5 @@
 /node_modules
 .next
 .package_lock
+.lock
+*-lock.json
