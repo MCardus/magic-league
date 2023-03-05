@@ -39,7 +39,7 @@ const MainWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url('/static/champion2017-bg.jpg') no-repeat center center fixed;
+  background: url(https://w.wallhaven.cc/full/42/wallhaven-42dpqm.jpg) no-repeat center center fixed;
   background-size: cover;
   font-family: PremierLeagueSans;
   font-weight: 300;
