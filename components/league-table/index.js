@@ -15,6 +15,7 @@ class LeagueTable extends Component {
     super()
     this.state = {
       round: 5
+
     }
   }
 

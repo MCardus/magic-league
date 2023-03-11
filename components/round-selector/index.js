@@ -31,7 +31,7 @@ class RoundSelector extends Component {
     return (
       <div style={{ margin: "2em 0 1em" }}>
         <div style={{ marginBottom: ".5em" }}>
-          {this.renderRounds(1, 4)}
+          {this.renderRounds(1, 5)}
         </div>
       </div>
     )
